@@ -10,8 +10,9 @@
 angular.module('newAppApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
+      'TestHTML5 Boilerplate',
+      'TOTOAngularJS',
       'Karma'
     ];
   });
+  
