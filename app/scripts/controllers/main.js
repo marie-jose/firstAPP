@@ -9,19 +9,20 @@
  */
 angular.module('newAppApp')
   .controller('MainCtrl', function () {
-    this.salutation = {
+    this.salutation = [{
       helloword: 'Bonjour!',
       name: 'Marie Jo'
-    };
+    }];
     this.awesomeThings = [
       'HTML5',
       'AngularJS',
       'Karma'
      ];
+   //  console.log(salutation);
     })
 .directive('mySalutation', function(){
   return {
-      template: 'Helloword:{{salutation.helloword}} Hame:{{salutation.name}} '
+      template: 'Helloword:{{salutation.helloword}} Name:{{salutation.name}} '
      
     };
   });
