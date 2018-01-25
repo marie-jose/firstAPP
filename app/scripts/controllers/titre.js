@@ -2,17 +2,16 @@
 
 /**
  * @ngdoc function
- * @name newAppApp.controller:MainCtrl
+ * @name newAppApp.controller:TitreCtrl
  * @description
- * # MainCtrl
+ * # TitreCtrl
  * Controller of the newAppApp
  */
 angular.module('newAppApp')
-  .controller('MainCtrl', function () {
+  .controller('TitreCtrl', function () {
     this.titres = [
       'TestHTML5 Boilerplate',
       'TOTOAngularJS',
       'Karma'
     ];
   });
-  

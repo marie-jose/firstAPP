@@ -361,6 +361,18 @@ module.exports = function (grunt) {
         }]
       }
     },
+// ng-repeat tries to duplicate the code safe for minification automatically
+    // by using the Angular long form for dependency injection.
+    ngRepeat: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '.tmp/concat/scripts',
+          src: '*.js',
+          dest: '.tmp/concat/scripts'
+        }]
+      }
+    },
 
     // Replace Google CDN references
     cdnify: {
@@ -460,6 +472,7 @@ module.exports = function (grunt) {
     'postcss',
     'ngtemplates',
     'concat',
+    'ngRepeat',
     'ngAnnotate',
     'copy:dist',
     'cdnify',
